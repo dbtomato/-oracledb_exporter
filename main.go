@@ -27,10 +27,10 @@ var (
 	// Version will be set at build time.
 	//变量，监听地址
 	Version            = "0.0.0.dev"
-	listenAddress      = kingpin.Flag("web.listen-address", "Address to listen on for web interface and telemetry.").Default(":9187").Envar("PG_EXPORTER_WEB_LISTEN_ADDRESS").String()
+	listenAddress      = kingpin.Flag("web.listen-address", "Address to listen on for web interface and telemetry.").Default(":9161").Envar("PG_EXPORTER_WEB_LISTEN_ADDRESS").String()
 	metricPath         = kingpin.Flag("web.telemetry-path", "Path under which to expose metrics.").Default("/metrics").Envar("PG_EXPORTER_WEB_TELEMETRY_PATH").String()
 	defaultFileMetrics = kingpin.Flag("default.metrics", "defaults metrics file").Default("/usr/local/percona/pmm-client/default-metrics.toml").Envar("DEFAULT_METRICS").String()
-	customMetrics      = kingpin.Flag("custom.metrics", "File that may contain various custom metrics in a TOML file. (env: CUSTOM_METRICS)").Default("/usr/local/percona/pmm-client/custom-metrics.toml").Envar("CUSTOM_METRICS").String()
+	customMetrics      = kingpin.Flag("custom.metrics", "File that may contain various custom metrics in a TOML file. (env: CUSTOM_METRICS)").Default("").Envar("CUSTOM_METRICS").String()
 	queryTimeout       = kingpin.Flag("query.timeout", "Query timeout (in seconds). (env: QUERY_TIMEOUT)").Default("/usr/local/percona/pmm-client/custom-metrics.toml").Envar("QUERY_TIMEOUT").String()
 	//listenAddress      = flag.String("web.listen-address", getEnv("LISTEN_ADDRESS", ":9161"), "Address to listen on for web interface and telemetry. (env: LISTEN_ADDRESS)")
 	//metricPath         = flag.String("web.telemetry-path", getEnv("TELEMETRY_PATH", "/metrics"), "Path under which to expose metrics. (env: TELEMETRY_PATH)")
