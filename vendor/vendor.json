@@ -9,6 +9,21 @@
 			"revisionTime": "2018-08-15T10:47:33Z"
 		},
 		{
+			"checksumSHA1": "KmjnydoAbofMieIWm+it5OWERaM=",
+			"path": "github.com/alecthomas/template",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "3wt0pTXXeS+S93unwhGoLIyGX/Q=",
+			"path": "github.com/alecthomas/template/parse",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "fCc3grA7vIxfBru7R3SqjcW+oLI=",
+			"path": "github.com/alecthomas/units",
+			"revision": ""
+		},
+		{
 			"path": "github.com/beorn7/perks/quantile",
 			"revision": "b965b613227fddccbfffe13eae360ed3fa822f8d",
 			"revisionTime": "2015-02-23T14:51:52+01:00"
@@ -38,6 +53,16 @@
 			"path": "github.com/prometheus/client_golang/prometheus",
 			"revision": "18acf9993a863f4c4b40612e19cdd243e7c86831",
 			"revisionTime": "2016-02-23T13:27:30+01:00"
+		},
+		{
+			"checksumSHA1": "UBqhkyjCz47+S19MVTigxJ2VjVQ=",
+			"path": "github.com/prometheus/client_golang/prometheus/internal",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "V51yx4gq61QCD9clxnps792Eq2Y=",
+			"path": "github.com/prometheus/client_golang/prometheus/promhttp",
+			"revision": ""
 		},
 		{
 			"path": "github.com/prometheus/client_model/go",
@@ -70,15 +95,26 @@
 			"revisionTime": "2015-10-29T15:50:50-04:00"
 		},
 		{
+			"path": "golang.org/x/sys/unix",
+			"revision": "50c6bc5e4292a1d4e65c6e9be5f53be28bcbe28e",
+			"revisionTime": "2016-02-04T14:46:46-08:00"
+		},
+		{
 			"checksumSHA1": "/SO2lR1gexhKSppnoHk8iflTre4=",
 			"path": "golang.org/x/sys/unix",
 			"revision": "50c6bc5e4292a1d4e65c6e9be5f53be28bcbe28e",
 			"revisionTime": "2016-02-04T14:46:46-08:00"
 		},
 		{
-			"path": "golang.org/x/sys/unix",
-			"revision": "50c6bc5e4292a1d4e65c6e9be5f53be28bcbe28e",
-			"revisionTime": "2016-02-04T14:46:46-08:00"
+			"checksumSHA1": "ZYmvJ1qqXG5KHRKVs1tRsRMxj/Q=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "9197077df8675547dfa5e04c6dfcd024257a2030",
+			"revisionTime": "2020-02-17T21:18:36Z"
+		},
+		{
+			"checksumSHA1": "3SZTatHIy9OTKc95YlVfXKnoySg=",
+			"path": "gopkg.in/alecthomas/kingpin.v2",
+			"revision": ""
 		},
 		{
 			"checksumSHA1": "dIH8v3OdMGX07t3yJGMODGFUKPg=",

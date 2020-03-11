@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b69d3c93-0d94-4ea0-a70b-f9caf004c945" name="Default Changelist" comment="" />
+    <list default="true" id="b69d3c93-0d94-4ea0-a70b-f9caf004c945" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/prometheus/client_golang/prometheus/internal/metric.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/prometheus/client_golang/prometheus/promhttp/delegator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/prometheus/client_golang/prometheus/promhttp/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/aliases.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/dll_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/empty.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/env_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/eventlog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/exec_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/memory_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/mkerrors.bash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/mkknownfolderids.bash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/mksyscall.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/race.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/race0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/security_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/str.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/syscall.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/syscall_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/types_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/types_windows_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/types_windows_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/types_windows_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/zerrors_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/zknownfolderids_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/golang.org/x/sys/windows/zsyscall_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/actions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/args.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/cmd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/completions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/envar.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/flags.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/global.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/guesswidth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/guesswidth_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/parser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/parsers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/templates.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/usage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/values.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/values.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/alecthomas/kingpin.v2/values_generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/prometheus/client_golang/NOTICE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/prometheus/client_golang/NOTICE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vendor.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vendor.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
