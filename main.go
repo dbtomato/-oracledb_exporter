@@ -4,15 +4,17 @@ import (
 	"context"
 	"database/sql"
 	"errors"
-	"flag"
 	"fmt"
 	"github.com/BurntSushi/toml"
 	_ "github.com/mattn/go-oci8"
 	"github.com/percona/exporter_shared"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/log"
+	"gopkg.in/alecthomas/kingpin.v2"
 	"net/http"
 	"os"
+	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -25,12 +27,19 @@ var (
 	// Version will be set at build time.
 	//变量，监听地址
 	Version            = "0.0.0.dev"
-	listenAddress      = flag.String("web.listen-address", getEnv("LISTEN_ADDRESS", ":9161"), "Address to listen on for web interface and telemetry. (env: LISTEN_ADDRESS)")
-	metricPath         = flag.String("web.telemetry-path", getEnv("TELEMETRY_PATH", "/metrics"), "Path under which to expose metrics. (env: TELEMETRY_PATH)")
-	landingPage        = []byte("<html><head><title>Oracle DB Exporter " + Version + "</title></head><body><h1>Oracle DB Exporter " + Version + "</h1><p><a href='" + *metricPath + "'>Metrics</a></p></body></html>")
-	defaultFileMetrics = flag.String("default.metrics", getEnv("DEFAULT_METRICS", "default-metrics.toml"), "File with default metrics in a TOML file. (env: DEFAULT_METRICS)")
-	customMetrics      = flag.String("custom.metrics", getEnv("CUSTOM_METRICS", ""), "File that may contain various custom metrics in a TOML file. (env: CUSTOM_METRICS)")
-	queryTimeout       = flag.String("query.timeout", getEnv("QUERY_TIMEOUT", "5"), "Query timeout (in seconds). (env: QUERY_TIMEOUT)")
+	listenAddress      = kingpin.Flag("web.listen-address", "Address to listen on for web interface and telemetry.").Default(":9187").Envar("PG_EXPORTER_WEB_LISTEN_ADDRESS").String()
+	metricPath         = kingpin.Flag("web.telemetry-path", "Path under which to expose metrics.").Default("/metrics").Envar("PG_EXPORTER_WEB_TELEMETRY_PATH").String()
+	defaultFileMetrics = kingpin.Flag("default.metrics", "defaults metrics file").Default("/usr/local/percona/pmm-client/default-metrics.toml").Envar("DEFAULT_METRICS").String()
+	customMetrics      = kingpin.Flag("custom.metrics", "File that may contain various custom metrics in a TOML file. (env: CUSTOM_METRICS)").Default("/usr/local/percona/pmm-client/custom-metrics.toml").Envar("CUSTOM_METRICS").String()
+	queryTimeout       = kingpin.Flag("query.timeout", "Query timeout (in seconds). (env: QUERY_TIMEOUT)").Default("/usr/local/percona/pmm-client/custom-metrics.toml").Envar("QUERY_TIMEOUT").String()
+	//listenAddress      = flag.String("web.listen-address", getEnv("LISTEN_ADDRESS", ":9161"), "Address to listen on for web interface and telemetry. (env: LISTEN_ADDRESS)")
+	//metricPath         = flag.String("web.telemetry-path", getEnv("TELEMETRY_PATH", "/metrics"), "Path under which to expose metrics. (env: TELEMETRY_PATH)")
+	landingPage = []byte("<html><head><title>Oracle DB Exporter " + Version + "</title></head><body><h1>Oracle DB Exporter " + Version + "</h1><p><a href='" + *metricPath + "'>Metrics</a></p></body></html>")
+
+//defaultFileMetrics = flag.String("default.metrics", getEnv("DEFAULT_METRICS", "default-metrics.toml"), "File with default metrics in a TOML file. (env: DEFAULT_METRICS)")
+//customMetrics      = flag.String("custom.metrics", getEnv("CUSTOM_METRICS", ""), "File that may contain various custom metrics in a TOML file. (env: CUSTOM_METRICS)")
+//queryTimeout       = flag.String("query.timeout", getEnv("QUERY_TIMEOUT", "5"), "Query timeout (in seconds). (env: QUERY_TIMEOUT)")
+
 )
 
 // Metric name parts.
@@ -341,7 +350,11 @@ func cleanName(s string) string {
 }
 
 func main() {
-	flag.Parse()
+	kingpin.Version(fmt.Sprintf("postgres_exporter %s (built with %s)\n", Version, runtime.Version()))
+	log.AddFlags(kingpin.CommandLine)
+	kingpin.Parse()
+
+	//flag.Parse()
 	log.Infoln("Starting oracledb_exporter " + Version)
 	dsn := os.Getenv("DATA_SOURCE_NAME")
 	// Load default metrics
@@ -374,7 +387,7 @@ func main() {
 	//http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 	//  w.Write(landingPage)
 	//})
-	exporter_shared.RunServer("oracledb", *listenAddress, *metricPath, prometheus.Handler())
+	exporter_shared.RunServer("oracledb", *listenAddress, *metricPath, promhttp.Handler())
 
 	log.Infoln("Listening on", *listenAddress)
 	log.Fatal(http.ListenAndServe(*listenAddress, nil))
