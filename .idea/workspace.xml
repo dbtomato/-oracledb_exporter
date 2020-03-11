@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b69d3c93-0d94-4ea0-a70b-f9caf004c945" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/COMPATIBLE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/COPYING" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/decode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/decode_meta.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/encode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/encoding_types.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/encoding_types_1.1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/lex.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/parse.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/session.vim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/type_check.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/BurntSushi/toml/type_fields.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/Gopkg.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/basic_auth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/percona/exporter_shared/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/LICENSE.libyaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/apic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/decode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/emitterc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/encode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/parserc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/readerc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/resolve.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/scannerc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/sorter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/writerc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yaml.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yamlh.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yamlprivateh.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/vendor.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/vendor.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -89,15 +47,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit go" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit go" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="355" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583893433919">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="567" y="355" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120/-357.-1440.2560.1440@0.0.1792.1120" timestamp="1583893433919" />
+    <state x="407" y="94" key="CommitChangelistDialog2" timestamp="1583893544001">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="407" y="94" key="CommitChangelistDialog2/0.0.1792.1120/-357.-1440.2560.1440@0.0.1792.1120" timestamp="1583893544001" />
     <state x="296" y="111" key="SettingsEditor" timestamp="1583833962543">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="296" y="111" key="SettingsEditor/0.0.1792.1120/-357.-1440.2560.1440@0.0.1792.1120" timestamp="1583833962543" />
+    <state x="396" y="237" key="Vcs.Push.Dialog.v2" timestamp="1583893573058">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="396" y="237" key="Vcs.Push.Dialog.v2/0.0.1792.1120/-357.-1440.2560.1440@0.0.1792.1120" timestamp="1583893573058" />
   </component>
 </project>
